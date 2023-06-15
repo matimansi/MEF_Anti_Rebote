@@ -104,14 +104,12 @@ void debounceFSM_update()
 
 void buttonPressed()
 {
-  //digitalWrite(LED_1, ~(digitalRead(LED_1)));
   if (digitalRead(LED_1) == 0) digitalWrite(LED_1, 1);
   else digitalWrite(LED_1, 0);
 }
 
 void buttonReleased()
 {
-  //digitalWrite(LED_2, ~(digitalRead(LED_2)));
   if (digitalRead(LED_2) == 0) digitalWrite(LED_2, 1);
   else digitalWrite(LED_2, 0);
 }
