@@ -22,11 +22,11 @@ Estos 2 tipos se diferencia en la forma en que se produce la salida.
 
 ## Mealy
 
-La **salida** depende del **estado actual** y **_la entrada_**.
+- La **salida** depende del **estado actual** y **_la entrada_**.
 
-El **siguiente estado** depende de la **entrada** y del **estado actual**.
+- El **siguiente estado** depende de la **entrada** y del **estado actual**.
 
-Las **diferentes salidas** son necesarias para el **cambio de estado**.
+- Las **diferentes salidas** son necesarias para el **cambio de estado**.
 
 <img src="Imagenes/Moore_Mealy.png">
 
