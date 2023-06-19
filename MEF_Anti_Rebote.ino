@@ -63,17 +63,17 @@ void debounceFSM_update()
     case BUTTON_FALLING:
       if (millis() - tiempo_actual > ANTI_REBOTE)
       {
-          if (digitalRead(BUTTON) == 0)
-          {
-            state = BUTTON_DOWN;
-            Serial.print("Button Pressed\nState -> BUTTON_DOWN\n");
-            buttonPressed();
-          }
-          else
-          {
-            state = BUTTON_UP;  
-            Serial.print("Return state to BUTTON_UP\n");
-          }
+        if (digitalRead(BUTTON) == 0)
+        {
+          state = BUTTON_DOWN;
+          Serial.print("Button Pressed\nState -> BUTTON_DOWN\n");
+          buttonPressed();
+        }
+        else
+        {
+          state = BUTTON_UP;  
+          Serial.print("Return state to BUTTON_UP\n");
+        }
       }
       break;
     case BUTTON_DOWN:
